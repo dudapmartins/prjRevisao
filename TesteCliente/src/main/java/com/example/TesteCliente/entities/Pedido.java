@@ -7,12 +7,13 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
-
 @Entity
-@Table(name="tb_Pedido")
+@Table(name = "tb_Pedido")
+
 public class Pedido {
 	
-	@Id
+
+@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long pedidoID;
 	
@@ -60,7 +61,4 @@ public Cliente getCliente() {
 	}
 
 
-	
-
-	
 }
